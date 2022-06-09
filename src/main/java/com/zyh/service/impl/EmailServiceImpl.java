@@ -43,7 +43,7 @@ public class EmailServiceImpl implements EmailService {
                     "<html><body>你在<a href='http://localhost:8080/'>微社区</a>进行注册"+
                             "验证码为<h2>"+code+"<h2><br>请在30分钟内完成注册<body></html>", true);
             helper.setTo(toEmail);
-            helper.setFrom("2539487486@qq.com");
+            helper.setFrom("2785021810@qq.com");
         } catch (MessagingException e) {
             e.printStackTrace();
         }
