@@ -1,0 +1,50 @@
+#端口
+server:
+  port: 8888
+  servlet:
+    context-path: /retwisApi
+
+#mysql redis
+spring:
+  datasource:
+    username: root
+    password: 123
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/microcommunity?useUnicode=true&characterEncoding=utf8&allowMultiQueries=true&useSSL=false&serverTimezone=UTC&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true
+
+  redis:
+    port: 6379
+    host: 192.168.88.100
+    #使用qq邮箱发送邮件
+  mail:
+    username: 2785021810@qq.com
+    password: ytoexsiwempedfbe
+    host: smtp.qq.com
+    properties:
+      mail:
+        smtp:
+          ssl:
+            enable: true
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 2MB
+#rabbitMQ
+  rabbitmq:
+    port: 5672
+    host: 192.168.88.120
+    username: admin
+    password: 123456
+    virtual-host: /
+
+
+#mybatis
+mybatis:
+  mapper-locations: classpath:mapper/**/*.xml
+
+#七牛云存储
+qiniu:
+    accessKey: ACisMx5ddrOEYlwjFyvtKZSxwnn50tL-_8xZKIN5
+    secretKey: 16zAhD5MjGlmjV7B0NjVcwlfW1VoVbgzNHWt_14b
+    bucket: communitymicro
+    prefix: http://rd7wsmibf.hn-bkt.clouddn.com/
