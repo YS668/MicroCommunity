@@ -8,13 +8,13 @@ server:
 spring:
   datasource:
     username: root
-    password: 123
+    password: Aa123456
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/microcommunity?useUnicode=true&characterEncoding=utf8&allowMultiQueries=true&useSSL=false&serverTimezone=UTC&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true
+    url: jdbc:mysql://120.79.181.133:3306/microcommunity?useUnicode=true&characterEncoding=utf8&allowMultiQueries=true&useSSL=false&serverTimezone=UTC&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true
 
   redis:
     port: 6379
-    host: 192.168.88.100
+    host: 120.79.181.133
     #使用qq邮箱发送邮件
   mail:
     username: 2785021810@qq.com
@@ -32,9 +32,9 @@ spring:
 #rabbitMQ
   rabbitmq:
     port: 5672
-    host: 192.168.88.120
+    host: 120.79.181.133
     username: admin
-    password: 123456
+    password: Aa123456
     virtual-host: /
 
 
