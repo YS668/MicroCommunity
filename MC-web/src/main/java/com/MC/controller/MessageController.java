@@ -6,16 +6,14 @@ import com.MC.entity.Msg;
 import com.MC.service.MessageService;
 import com.MC.sysLog.Logweb;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
 /**
  * 消息相关的接口
  */
+@CrossOrigin
 @RequestMapping("/message")
 @RestController
 public class MessageController {

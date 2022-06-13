@@ -20,6 +20,7 @@ import java.util.Map;
 /**
  * 个人主页相关的接口
  */
+@CrossOrigin
 @RequestMapping("/profile")
 @RestController
 public class ProfileController {

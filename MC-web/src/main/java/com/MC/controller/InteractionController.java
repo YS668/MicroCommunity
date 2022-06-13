@@ -4,6 +4,7 @@ import com.MC.entity.Msg;
 import com.MC.service.InteractionService;
 import com.MC.sysLog.Logweb;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
@@ -11,6 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 /**
  * 点赞收藏相关的接口
  */
+@CrossOrigin
 @RestController
 public class InteractionController {
     @Autowired

@@ -27,6 +27,7 @@ import java.util.Map;
  * 用户信息的修改
  * 注册登录
  */
+@CrossOrigin
 @RestController
 @Api(value = "UserController")
 public class UserController {

@@ -5,6 +5,7 @@ import com.MC.utils.JWTUtil;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.amqp.rabbit.annotation.RabbitListener;
 import org.springframework.stereotype.Component;
+import org.springframework.web.bind.annotation.CrossOrigin;
 
 import javax.websocket.OnClose;
 import javax.websocket.OnMessage;
@@ -14,7 +15,7 @@ import javax.websocket.server.ServerEndpoint;
 import java.io.IOException;
 import java.util.concurrent.ConcurrentHashMap;
 
-
+@CrossOrigin
 @Component
 @ServerEndpoint(value = "/websocket")
 @Slf4j

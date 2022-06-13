@@ -5,6 +5,7 @@ import com.MC.entity.Msg;
 import org.apache.shiro.ShiroException;
 import org.apache.shiro.authc.UnknownAccountException;
 import org.springframework.http.HttpStatus;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 
@@ -15,6 +16,7 @@ import javax.servlet.http.HttpServletRequest;
  * 对异常进行返回处理
  * springboot全局捕获异常
  */
+@CrossOrigin
 @RestControllerAdvice
 public class ExceptionController {
 

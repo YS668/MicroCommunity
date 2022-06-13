@@ -11,6 +11,7 @@ import java.io.IOException;
 /**
  * 文件上传的相关接口
  */
+@CrossOrigin
 @RestController
 @RequestMapping("/qiniu")
 public class QiniuController {

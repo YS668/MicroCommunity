@@ -18,6 +18,7 @@ import java.util.List;
  * 后台接口
  */
 @RequestMapping("/admin")
+@CrossOrigin
 @RestController
 public class AdminController {
 //    @RequiresRoles("admin")

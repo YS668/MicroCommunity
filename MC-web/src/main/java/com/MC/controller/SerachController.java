@@ -4,6 +4,7 @@ import com.MC.entity.Msg;
 import com.MC.service.SerachService;
 import com.MC.sysLog.Logweb;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -14,6 +15,7 @@ import java.util.Map;
 /**
  * 搜索功能
  */
+@CrossOrigin
 @RestController
 public class SerachController {
     @Autowired

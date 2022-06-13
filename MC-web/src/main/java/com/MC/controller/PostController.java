@@ -15,6 +15,7 @@ import org.springframework.web.bind.annotation.*;
 /**
  * 文章相关的接口
  */
+@CrossOrigin
 @RequestMapping("/post")
 @RestController
 public class PostController {

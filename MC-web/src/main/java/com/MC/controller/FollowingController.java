@@ -3,14 +3,12 @@ package com.MC.controller;
 import com.MC.entity.Msg;
 import com.MC.service.FollowingService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 /**
  * 关注相关的接口
  */
+@CrossOrigin
 @RestController
 @RequestMapping("/following")
 public class FollowingController {

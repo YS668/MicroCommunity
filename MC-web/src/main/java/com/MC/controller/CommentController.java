@@ -15,6 +15,7 @@ import java.util.Map;
 /**
  * 评论相关的接口
  */
+@CrossOrigin
 @RestController
 public class CommentController {
     @Autowired
