@@ -1,6 +1,6 @@
 #端口
 server:
-  port: 8888
+  port: 8707
   servlet:
     context-path: /retwisApi
 
